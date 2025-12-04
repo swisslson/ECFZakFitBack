@@ -7,10 +7,10 @@
 
 import Fluent
 
-enum UserTypeDactiviterJournaliere: String, Codable, CaseIterable, Sendable {
-    case sedentaire
-    case deuxFoisSemaine
-    case troisAQuatreFoisSemaine
-    case quotidien
-    case intensif
+enum UserTypeOfDailyActivity: String, Codable, CaseIterable, Sendable {
+    case sedentary
+    case twiceaweek
+    case threeFourTimesAWeek
+    case daily
+    case intensive
 }

@@ -6,9 +6,9 @@
 //
 import Fluent
 
-enum UserObjectifPersonnel: String, Codable, CaseIterable, Sendable {
-    case maintien
-    case priseDemasse
-    case seche
+enum UserPersonalObjective: String, Codable, CaseIterable, Sendable {
+    case maintenance
+    case masssocket
+    case dried
    
 }

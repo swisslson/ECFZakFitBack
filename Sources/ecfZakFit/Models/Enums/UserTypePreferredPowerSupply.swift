@@ -6,7 +6,9 @@
 //
 import Fluent
 
-enum UserTypealimentationPrefere: String, Codable, CaseIterable, Sendable {
-    case vegetarien
-    case flexitarien
+enum UserTypePreferredPowerSupply: String, Codable, CaseIterable, Sendable {
+    case vegetarian
+    case flexitarian
+    case vegan
+    case pescatarian
 }

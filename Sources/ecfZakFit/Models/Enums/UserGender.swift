@@ -7,7 +7,7 @@
 
 import Fluent
 
-enum Usergenre: String, Codable, CaseIterable, Sendable {
-    case homme
-    case femme
+enum UserGender: String, Codable, CaseIterable, Sendable {
+    case man
+    case woman
 }

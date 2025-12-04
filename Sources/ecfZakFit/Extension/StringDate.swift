@@ -10,8 +10,8 @@ extension String {
     func toDate() -> Date? {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
-        formatter.locale = Locale(identifier: "fr_FR")
-        formatter.timeZone = TimeZone.current
+        formatter.locale = Locale(identifier: "en_US_POSIX")        // ✅ CHANGÉ
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)           // ✅ CHANGÉ (était TimeZone.current)
         return formatter.date(from: self)
     }
 }
@@ -20,12 +20,11 @@ extension Date {
     func toString(format: String = "yyyy-MM-dd") -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = format
-        formatter.locale = Locale(identifier: "fr_FR")
-        formatter.timeZone = TimeZone.current
+        formatter.locale = Locale(identifier: "en_US_POSIX")       // ✅ CHANGÉ
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)          // ✅ CHANGÉ (était TimeZone.current)
         return formatter.string(from: self)
     }
 }
-
 
 extension Calendar {
     func startOfWeek(for date: Date) -> Date {
